@@ -34,8 +34,12 @@ node_modules
 # testing
 /coverage
 
+# development
+/.cache
+
 # production
 /build
+/dist
 
 # misc
 .DS_Store
