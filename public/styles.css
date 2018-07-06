@@ -115,12 +115,23 @@ h1, h2, h3, h4, h5 {
 .header__wrapper {
   position: relative;
   max-width: var(--page-max-width);
-  min-height: 100vh;
+  height: 100vh;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
+.header__my-name {
+  margin: 0;
+  font-size: calc(16px + 7vmin);
+}
+
+.header__jobtitle {
+  margin: 0;
+  font-size: calc(16px + 1vmin);
+}
+
 
 .header__canvas {
   position: absolute;
@@ -140,7 +151,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .social__link {
-  font-size: 200%;
+  font-size: calc(16px + 1vmin);
 }
 
 .main__section {
