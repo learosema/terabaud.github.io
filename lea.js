@@ -24,8 +24,8 @@
     this.x = (R() * w)|0
     this.y = (R() * h)|0
     this.r = (R() * 360)|0
-    this.w = (R() * (5 + w / 2))|0
-    this.h = (R() * (5 + w / 2))|0
+    this.w = (R() * (5 + w))|0
+    this.h = (R() * (5 + h))|0
   }
 
   Particle.prototype.render = function() {
