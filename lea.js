@@ -1,7 +1,7 @@
 (function() {
   "use strict";
 
-  const N = 10
+  const N = 50
   const particles = Array(N)
   const R = Math.random
   const DEG = Math.PI / 180
@@ -33,7 +33,7 @@
     c.translate(this.x, this.y)
     c.rotate(this.r * DEG)
     c.translate(-this.x, -this.y)
-    c.fillStyle = 'rgba(255,0,0,.2)'
+    c.fillStyle = 'rgba(255,255,255,.1)'
     c.fillRect(this.x - this.w / 2, this.x - this.w / 2, this.w, this.h)
     c.restore()
   }
