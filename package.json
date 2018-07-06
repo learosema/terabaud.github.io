@@ -1,0 +1,24 @@
+{
+  "name": "terabaud.github.io",
+  "homepage": "https://terabaud.github.io/",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -c0 ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terabaud/terabaud.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/terabaud/terabaud.github.io/issues"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
