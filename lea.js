@@ -16,6 +16,7 @@
   function setSize() {
     w = a.width = a.clientWidth
     h = a.height = a.clientWidth
+    particles.splice(0, N)
   }
   setSize()
   onresize=setSize
