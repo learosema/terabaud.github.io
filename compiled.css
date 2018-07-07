@@ -4,6 +4,7 @@
   --captions: #222;
   --link-color: #bf00ff;
   --bg-color-2: #f5adff;
+  --bg-color-3: #bd6dcf;
   --page-max-width: 800px;
   --text-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   --caption-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
@@ -157,8 +158,8 @@ h1, h2, h3, h4, h5 {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background-color: #f5adff;
-  background-color: var(--bg-color-2);
+  background-color: #bd6dcf;
+  background-color: var(--bg-color-3);
 }
 
 .social__list {
