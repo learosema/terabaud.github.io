@@ -1,10 +1,11 @@
+
 :root {
   --bg-color: #fff;
   --text-color: #777;
   --captions: #222;
-  --link-color: #bf00ff;
-  --bg-color-2: #f5adff;
-  --bg-color-3: #bd6dcf;
+  --link-color: #ff3f00;
+  --bg-color-2: #ffcc33;
+  --bg-color-3: #ffaa22;
   --page-max-width: 800px;
   --text-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   --caption-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
@@ -126,22 +127,17 @@ h1, h2, h3, h4, h5 {
   height: 100vh;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+
 }
 
-.header__my-name {
+.header__text {
   box-sizing: border-box;  
   margin: 1vmin;
-  font-size: calc(16px + 7vmin);
+
 }
 
-.header__jobtitle {
-  box-sizing: border-box;
-  margin: 1vmin;
-  font-size: calc(16px + 1vmin);
-}
 
 
 .header__canvas {
@@ -149,14 +145,14 @@ h1, h2, h3, h4, h5 {
   top: 0; left: 0;
   width: 100%; height: 100%;
   background-color: var(--bg-color-3);
+
 }
 
 .social__list {
   list-style: none;
   padding: 0;
-  box-sizing: border-box;
+  margin: 0;
   width: 100%; 
-  margin: 1vmin;
 }
 
 .social__list-item {
@@ -164,12 +160,13 @@ h1, h2, h3, h4, h5 {
 }
 
 .social__link {
-  font-size: calc(16px + 1vmin);
+  font-size: calc(16px + 4vmin);
+  padding-right: 1vmin;
 }
 
 .main__section {
   box-sizing: border-box;
   min-height: 100vh;
-  margin: 0 auto;
+  margin: 2em auto;
   max-width: var(--page-max-width);
 }
