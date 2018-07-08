@@ -157,9 +157,17 @@ h1, h2, h3, h4, h5 {
 .main__section {
   box-sizing: border-box;
   min-height: 100vh;
-  margin: 2em auto;
+  margin: 0 auto;
   max-width: var(--page-max-width);
 }
+
+.main__section-link {
+  /* todo: 
+     padding height should adjust 
+     to the menu height */
+  padding: 5em 0 0 0;
+}
+
 
 .footer {
   background: #222;
