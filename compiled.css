@@ -70,7 +70,6 @@ h1, h2, h3, h4, h5 {
   transition: background-color 250ms ease;
 }
 
-
 .nav:hover {
   background-color: rgba(0,0,0,1);
 }
@@ -117,7 +116,6 @@ h1, h2, h3, h4, h5 {
   height: 100vh;
 }
 
-
 .header__wrapper {
   position: relative;
   max-width: 800px;
@@ -137,8 +135,6 @@ h1, h2, h3, h4, h5 {
   margin: 1vmin;
 
 }
-
-
 
 .header__canvas {
   position: absolute;
@@ -179,7 +175,6 @@ h1, h2, h3, h4, h5 {
      to the menu height */
   padding: 5em 0 0 0;
 }
-
 
 .footer {
   background: #222;
