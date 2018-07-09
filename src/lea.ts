@@ -4,12 +4,11 @@ const { random, PI } = Math
 const DEG = PI / 180
 const d = document
 const $ = d.querySelector.bind(d)
-const a = $('.header__canvas')
-const c = a.getContext('2d')
-let w = a.clientWidth
-let h = a.clientHeight
+const a = $`.header__canvas`
+const c = a.getContext`2d`
+let w, h
 
-function setSize() {
+function setSize () {
   w = a.width = a.clientWidth
   h = a.height = a.clientWidth
   particles.splice(0, N)
@@ -45,8 +44,7 @@ class Particle {
 
   move () {
     this.r = (this.r + .1) % 360
-  }
-  
+  } 
 }
 
 function animation(frame) {
