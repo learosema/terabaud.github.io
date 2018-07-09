@@ -1,13 +1,16 @@
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
 var N = 50;
 var particles = Array(N);
-var R = Math.random;
-var DEG = Math.PI / 180;
+var random = Math.random, PI = Math.PI;
+var DEG = PI / 180;
 var d = document;
 var $ = d.querySelector.bind(d);
-var a = $('.header__canvas');
-var c = a.getContext('2d');
-var w = a.clientWidth;
-var h = a.clientHeight;
+var a = $(__makeTemplateObject([".header__canvas"], [".header__canvas"]));
+var c = a.getContext(__makeTemplateObject(["2d"], ["2d"]));
+var w, h;
 function setSize() {
     w = a.width = a.clientWidth;
     h = a.height = a.clientWidth;
@@ -17,11 +20,11 @@ setSize();
 onresize = setSize;
 var Particle = /** @class */ (function () {
     function Particle() {
-        this.x = (R() * w) | 0;
-        this.y = (R() * h) | 0;
-        this.r = (R() * 360) | 0;
-        this.w = (R() * (5 + w)) | 0;
-        this.h = (R() * (5 + h)) | 0;
+        this.x = (random() * w) | 0;
+        this.y = (random() * h) | 0;
+        this.r = (random() * 360) | 0;
+        this.w = (random() * (5 + w)) | 0;
+        this.h = (random() * (5 + h)) | 0;
     }
     Particle.prototype.render = function () {
         c.save();
