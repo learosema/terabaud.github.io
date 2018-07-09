@@ -1,2 +1,4 @@
 node_modules
 public/compiled.css
+public/bundle.js
+public/index.html

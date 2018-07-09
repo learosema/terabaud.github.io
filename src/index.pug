@@ -1,0 +1,67 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.1.0/css/all.css' integrity='sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt' crossorigin='anonymous')
+  link(rel='stylesheet' href='compiled.css')
+  title lea@the_internet ~ $ _
+nav.nav
+  ul.nav__list
+    li.nav__list-item
+      a.nav__link(href='#header')
+        | 👩 HI!
+    li.nav__list-item
+      a.nav__link(href='#about') About
+    li.nav__list-item
+      a.nav__link(href='#portfolio') Projects
+    li.nav__list-item
+      a.nav__link(target='_blank' href='https://codepen.io/terabaud/#hireme') Contact
+header#header.header(role='banner')
+  canvas.header__canvas
+  .header__wrapper
+    .header__text
+      h1.header__caption Hello! I am Lea 👋
+      h2.header__intro
+        | Digital artist and full stack web unicorn 🦄.
+      nav.social
+        ul.social__list
+          li.social__list-item
+            a.social__link(href='https://github.com/terabaud/' aria-label='GitHub' target='_blank')
+              i.fab.fa-github(aria-hidden='')
+          li.social__list-item
+            a.social__link(href='https://codepen.io/terabaud/' aria-label='CodePen' target='_blank')
+              i.fab.fa-codepen(aria-hidden='')
+          li.social__list-item
+            a.social__link(href='https://twitter.com/terabaud/' aria-label='Twitter' target='_blank')
+              i.fab.fa-twitter(aria-hidden='')
+          li.social__list-item
+            a.social__link(href='https://www.xing.com/profile/Lea_Rosema' aria-label='Xing' target='_blank')
+              i.fab.fa-xing(aria-hidden='')
+main.main
+  .main__section
+    h3#about.main__section-link About Me
+    p
+      | Hello! My name is Lea Rosema. I&apos;m a Full Stack Software Developer, currently based in Papenburg, Germany. I love the
+      | web platform. As a life-long learner, I always keep up-to date with modern web technologies and love to work on projects
+      | following agile and test-first development workflows.
+    p
+      | For fun and profit, I enjoy creative coding on Codepen playing with HTML5 Canvas, SVG, WebGL and exploring new JavaScript APIs.
+    h3 Tech Stack
+    p I focus on JavaScript in node.js and in the Browser.
+  .main__section
+    h3#portfolio.main__section-link Projects
+    p
+      | I have built some cool pens on 
+      a(href='https://codepen.io/terabaud') CodePen
+      | .
+footer.footer
+  nav.footer__nav
+    ul.footer__list
+      li.footer__list-item
+        | &copy; 2018 Lea Rosema
+      li.footer__list-item
+        a(href='https://github.com/terabaud/terabaud.github.io') Github
+      li.footer__list-item
+        a(href='https://github.com/terabaud/terabaud.github.io/blob/master/LICENSE') License
+script(src='bundle.js')

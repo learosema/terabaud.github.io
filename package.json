@@ -6,11 +6,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "postcss public/styles.css -o public/compiled.css -m",
-    "watch:css": "postcss public/styles.css -o public/compiled.css -w -m",
+    "build:html": "pug src -o public",
+    "watch:html": "pug src -o public -w",
+    "build:js": "tsc -t ES5 --outFile public/bundle.js src/lea.ts",
+    "watch:js": "tsc -w -t ES5 --outFile public/bundle.js src/lea.ts",
+    "build:css": "postcss src/styles.css -o public/compiled.css -m",
+    "watch:css": "postcss src/styles.css -o public/compiled.css -w -m",
     "server": "http-server -c0 public",
-    "start": "npm-run-all -p -l watch:css server",
-    "build": "npm run build:css -s",
+    "start": "npm-run-all -p -l watch:css watch:js watch:html server",
+    "build": "npm-run-all -s -l build:css build:js build:html",
     "predeploy": "npm run build -s",
     "deploy": "gh-pages -d public -b master"
   },
@@ -29,6 +33,11 @@
     "http-server": "^0.11.1",
     "npm-run-all": "^4.1.3",
     "postcss-cli": "^5.0.1",
-    "postcss-preset-env": "^5.2.1"
+    "postcss-import": "^11.1.0",
+    "postcss-preset-env": "^5.2.1",
+    "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6",
+    "pug-filters": "^3.1.0",
+    "typescript": "^2.9.2"
   }
 }
