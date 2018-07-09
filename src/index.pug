@@ -41,20 +41,10 @@ header#header.header(role='banner')
 main.main
   .main__section
     h3#about.main__section-link About Me
-    p
-      | Hello! My name is Lea Rosema. I&apos;m a Full Stack Software Developer, currently based in Papenburg, Germany. I love the
-      | web platform. As a life-long learner, I always keep up-to date with modern web technologies and love to work on projects
-      | following agile and test-first development workflows.
-    p
-      | For fun and profit, I enjoy creative coding on Codepen playing with HTML5 Canvas, SVG, WebGL and exploring new JavaScript APIs.
-    h3 Tech Stack
-    p I focus on JavaScript in node.js and in the Browser.
+    include:markdown-it content/about.md
   .main__section
     h3#portfolio.main__section-link Projects
-    p
-      | I have built some cool pens on 
-      a(href='https://codepen.io/terabaud') CodePen
-      | .
+    include:markdown-it content/projects.md
 footer.footer
   nav.footer__nav
     ul.footer__list
