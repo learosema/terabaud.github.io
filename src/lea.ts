@@ -53,7 +53,7 @@ function animation(frame) {
     if (!particles[i]) {
       particles[i] = new Particle()
     }
-    particles[i].renderandom()
+    particles[i].render()
     particles[i].move()
   }
   requestAnimationFrame(animation)
