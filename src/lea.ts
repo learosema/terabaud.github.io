@@ -1,7 +1,7 @@
 const N = 50
 const particles = Array(N)
-const R = Math.random
-const DEG = Math.PI / 180
+const { random, PI } = Math
+const DEG = PI / 180
 const d = document
 const $ = d.querySelector.bind(d)
 const a = $('.header__canvas')
@@ -25,12 +25,12 @@ class Particle {
   w: number
   h: number
 
-  constructor() {
-    this.x = (R() * w)|0
-    this.y = (R() * h)|0
-    this.r = (R() * 360)|0
-    this.w = (R() * (5 + w))|0
-    this.h = (R() * (5 + h))|0
+  constructor () {
+    this.x = (random() * w)|0
+    this.y = (random() * h)|0
+    this.r = (random() * 360)|0
+    this.w = (random() * (5 + w))|0
+    this.h = (random() * (5 + h))|0
   }
 
   render () {
@@ -55,7 +55,7 @@ function animation(frame) {
     if (!particles[i]) {
       particles[i] = new Particle()
     }
-    particles[i].render()
+    particles[i].renderandom()
     particles[i].move()
   }
   requestAnimationFrame(animation)
