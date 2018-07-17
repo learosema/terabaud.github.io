@@ -1,13 +1,16 @@
-p Want to get in touch with me? Drop me a message or use one of my profiles
+p
+  | Want to get in touch with me? Drop me a message or use one of my 
+  a(href='/#header') profiles
+  | .
 
 form.contact-form(action="https://formspree.io/terabaud@gmail.com", method="POST")
   .contact-form__field
     label.contact-form__label(for="name") Name
-    input.contact-form__input(name="name")
+    input.contact-form__input(name="name", required)
   .contact-form__field
     label.contact-form__label(for="_replyto") E-Mail
-    input.contact-form__input(name="_replyto")
+    input.contact-form__input(name="_replyto", required)
   .contact-form__field
     label.contact-form__label(for="text") Message
-    textarea.contact-form__input(name="text", cols="80", rows="10")
+    textarea.contact-form__input(name="text", cols="80", rows="10", required)
   button.contact-form__submit(type="submit") Submit
