@@ -134,7 +134,7 @@ ul {
 }
 .social__link {
   font-size: calc(16px + 4vmin);
-  padding-right: 1vmin;
+  padding-right: .5em;
 }
 .main__section {
   box-sizing: border-box;
