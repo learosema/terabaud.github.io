@@ -6,52 +6,9 @@ head
   link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.1.0/css/all.css' integrity='sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt' crossorigin='anonymous')
   link(rel='stylesheet' href='compiled.css')
   title lea@the_internet ~ $ _
-nav.nav#navbar
-  ul.nav__list
-    li.nav__list-item
-      a.nav__link(href='#header')
-        | 👩 HI!
-    li.nav__list-item
-      a.nav__link(href='#about') About
-    li.nav__list-item
-      a.nav__link(href='#portfolio') Projects
-    li.nav__list-item
-      a.nav__link(target='_blank' href='https://codepen.io/terabaud/#hireme') Contact
-header#header.header(role='banner')
-  canvas.header__canvas
-  .header__wrapper
-    .header__text#welcome-section
-      h1.header__caption Hello! I am Lea 👋
-      h2.header__intro
-        | A digital artist and full stack web unicorn 🦄.
-      nav.social
-        ul.social__list
-          li.social__list-item
-            a.social__link#profile-link(href='https://github.com/terabaud/' aria-label='GitHub' target='_blank')
-              i.fab.fa-github(aria-hidden='')
-          li.social__list-item
-            a.social__link(href='https://codepen.io/terabaud/' aria-label='CodePen' target='_blank')
-              i.fab.fa-codepen(aria-hidden='')
-          li.social__list-item
-            a.social__link(href='https://twitter.com/terabaud/' aria-label='Twitter' target='_blank')
-              i.fab.fa-twitter(aria-hidden='')
-          li.social__list-item
-            a.social__link(href='https://www.xing.com/profile/Lea_Rosema' aria-label='Xing' target='_blank')
-              i.fab.fa-xing(aria-hidden='')
-main.main
-  .main__section
-    h3#about.main__section-link About Me
-    include:markdown-it content/about.md
-  .main__section
-    h3#portfolio.main__section-link Projects
-    include:markdown-it content/projects.md
-footer.footer
-  nav.footer__nav
-    ul.footer__list
-      li.footer__list-item
-        | &copy; 2018 Lea Rosema
-      li.footer__list-item
-        a(href='https://github.com/terabaud/terabaud.github.io') Github
-      li.footer__list-item
-        a(href='https://github.com/terabaud/terabaud.github.io/blob/master/LICENSE') License
-script(src='bundle.js')
+body
+  include includes/navbar.pug
+  include includes/header.pug
+  include includes/main.pug
+  include includes/footer.pug
+  script(src='bundle.js')

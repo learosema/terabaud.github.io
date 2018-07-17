@@ -1,0 +1,53 @@
+.header {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+}
+
+
+.header__wrapper {
+  position: relative;
+  max-width: var(--page-max-width);
+  box-sizing: border-box;
+  padding: 7em 0;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.header__text {
+  box-sizing: border-box;  
+  margin: 1vmin;
+
+}
+
+
+
+.header__canvas {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: var(--bg-color-3);
+
+}
+
+.social__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; 
+}
+
+.social__list-item {
+  display: inline-block;
+}
+
+.social__link {
+  font-size: calc(16px + 4vmin);
+  padding-right: 1vmin;
+}
