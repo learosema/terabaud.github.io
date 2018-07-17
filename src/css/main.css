@@ -3,7 +3,12 @@
   box-sizing: border-box;
   min-height: 100vh;
   margin: 0 auto;
+  padding: 0 .5em;
   max-width: var(--page-max-width);
+}
+
+.main__section:last-child {
+  min-height: 80vh;
 }
 
 .main__section-link {
@@ -12,3 +17,4 @@
      to the menu height */
   padding: 5em 0 0 0;
 }
+
