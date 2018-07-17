@@ -1,20 +1,28 @@
-This is only a small excerpt of my works. Check out my [CodePen profile](https://codepen.io/terabaud/) for more.
 
 #### Web Audio/MIDI API
 
-* [Oscillator Oscillator](https://codepen.io/terabaud/details/ZRybwg)
-* [Music Paint](https://codepen.io/terabaud/details/jVOYNv)
+* [Oscillator Oscillator](https://codepen.io/terabaud/details/ZRybwg) - an FM synthesis playground
+* [Music Paint](https://codepen.io/terabaud/details/jVOYNv) - paint your music!
+
+#### Libraries
+
+* [glutz.js](https://github.com/terabaud/hello-webgl) - GL utilities for JS, a microlibrary for WebGL
 
 #### Animations
 
-* [glutz.js](https://github.com/terabaud/hello-webgl) - GL utilities for JS, a microlibrary for WebGL
-* [Display hacked by atan2](https://codepen.io/terabaud/details/qVXVbW) - GLSL Shader
-* [Morphing fractal](https://codepen.io/terabaud/details/qVXVbW) - GLSL Shader
+* [Display hacked by atan2](https://codepen.io/terabaud/details/avKerm) - GLSL Shader animation
+* [Morphing fractal](https://codepen.io/terabaud/details/qVXVbW) - GLSL Shader animation
+* [This pen has bugs](https://codepen.io/terabaud/details/QNpBvE) - a canvas animation with lots of bugs
+* [Color spin](https://codepen.io/terabaud/details/gGvaJZ) - LO-RES canvas animation, presented at the [CodePen Meetup Hamburg](https://meetup.com/CodePenHamburg) October 2017 on [special hardware](https://twitter.com/CodePenHamburg/status/917888354670301184), hosted by [CELLULAR](https://cellular.de)
+* [Game of Wolves, Sheeps and Grass](https://codepen.io/terabaud/details/domVRZ/) - a cellular automaton.
 
 #### Games
 
-* [Get to Zero](https://codepen.io/terabaud/pen/NGJyxx)
+* [Get to Zero](https://codepen.io/terabaud/details/NGJyxx) - Combine multiple tiles to decrease the number of a tile.
+* [Turn off the Lights](https://codepen.io/terabaud/details/QOyLbK) - turn off all the lights, but you can only toggle whole rows and whole columns
 
 #### Maths
 
-* [Triangle Fun](https://codepen.io/terabaud/pen/qZYoZK)
+* [Triangle Fun](https://codepen.io/terabaud/details/qZYoZK)
+
+This is only a small excerpt of my works. Check out my [CodePen profile](https://codepen.io/terabaud/) for more.
