@@ -2,35 +2,5 @@
 @import 'basics.css';
 @import 'nav.css';
 @import 'header.css';
-/* -----------------------------------------
- * Leayout
- * ----------------------------------------- */
-
-.main__section {
-  box-sizing: border-box;
-  min-height: 100vh;
-  margin: 0 auto;
-  max-width: var(--page-max-width);
-}
-
-.main__section-link {
-  /* todo: 
-     padding height should adjust 
-     to the menu height */
-  padding: 5em 0 0 0;
-}
-
-
-.footer {
-  background: #222;
-  padding: 2em;
-}
-
-.footer__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+@import 'main.css';
+@import 'footer.css';
