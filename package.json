@@ -8,12 +8,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:html": "pug src -o public",
     "watch:html": "pug src -o public -w",
+    "lint:js": "tslint src/*.ts",
     "build:js": "tsc -t ES5 --outFile public/bundle.js src/lea.ts",
     "watch:js": "tsc -w -t ES5 --outFile public/bundle.js src/lea.ts",
     "build:css": "postcss src/styles.css -o public/compiled.css -m",
     "watch:css": "postcss src/styles.css -o public/compiled.css -w -m",
     "server": "http-server -c0 public",
     "start": "npm-run-all -p -l watch:css watch:js watch:html server",
+    "lint": "npm run lint:js -s",
     "build": "npm-run-all -s -l build:css build:js build:html",
     "predeploy": "npm run build -s",
     "deploy": "gh-pages -d public -b master"
@@ -38,6 +40,7 @@
     "postcss-preset-env": "^5.2.1",
     "pug": "^2.0.3",
     "pug-cli": "^1.0.0-alpha6",
+    "tslint": "^5.11.0",
     "typescript": "^2.9.2"
   }
 }
