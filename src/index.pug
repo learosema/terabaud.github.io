@@ -6,7 +6,7 @@ head
   link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.1.0/css/all.css' integrity='sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt' crossorigin='anonymous')
   link(rel='stylesheet' href='compiled.css')
   title lea@the_internet ~ $ _
-nav.nav
+nav.nav#navbar
   ul.nav__list
     li.nav__list-item
       a.nav__link(href='#header')
@@ -20,14 +20,14 @@ nav.nav
 header#header.header(role='banner')
   canvas.header__canvas
   .header__wrapper
-    .header__text
+    .header__text#welcome-section
       h1.header__caption Hello! I am Lea 👋
       h2.header__intro
         | A digital artist and full stack web unicorn 🦄.
       nav.social
         ul.social__list
           li.social__list-item
-            a.social__link(href='https://github.com/terabaud/' aria-label='GitHub' target='_blank')
+            a.social__link#profile-link(href='https://github.com/terabaud/' aria-label='GitHub' target='_blank')
               i.fab.fa-github(aria-hidden='')
           li.social__list-item
             a.social__link(href='https://codepen.io/terabaud/' aria-label='CodePen' target='_blank')
