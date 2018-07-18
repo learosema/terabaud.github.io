@@ -1,20 +1,24 @@
 
 .main__section {
   box-sizing: border-box;
-  min-height: 100vh;
+
   margin: 0 auto;
-  padding: 0 .5em;
+  padding: 4em 1em;
   max-width: var(--page-max-width);
 }
-
-.main__section:last-child {
+.main__content {
   min-height: 80vh;
 }
-
-.main__section-link {
-  /* todo: 
-     padding height should adjust 
-     to the menu height */
-  padding: 5em 0 0 0;
+.main__content:last-child {
+  min-height: 70vh;
 }
 
+@media (min-width: 800px) {
+
+
+  .main__content > p:first-child,
+  .main__content > h4:first-child {
+    padding-top: 0;
+    margin-top: 0;
+  }
+}

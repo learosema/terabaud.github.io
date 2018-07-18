@@ -1,10 +1,13 @@
 main.main
-  .main__section
-    h3#about.main__section-link About Me
-    include:markdown-it ../content/about.md
-  .main__section
-    h3#portfolio.main__section-link Projects
-    include:markdown-it ../content/projects.md
-  .main__section
-    h3#contact.main__section-link Contact
-    include contact.pug
+  .main__section#about
+    h3.main__title About Me
+    section.main__content
+      include:markdown-it ../content/about.md
+  .main__section#portfolio
+    h3.main__title Projects
+    section.main__content
+      include:markdown-it ../content/projects.md
+  .main__section#contact
+    h3.main__title Contact
+    section.main__content
+      include contact.pug
