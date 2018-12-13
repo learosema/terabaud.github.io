@@ -48,6 +48,10 @@
 }
 
 .social__link {
-  font-size: calc(16px + 4vmin);
+  font-size: calc(16px + 6vmin);
   padding-right: .5em;
+}
+
+.social__link:hover {
+  animation: wiggle 0.45s linear infinite alternate;
 }

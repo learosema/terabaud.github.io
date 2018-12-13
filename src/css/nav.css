@@ -43,4 +43,5 @@
 
 .nav__link:hover {
   color: var(--bg-color);
+  animation: wiggle 0.45s linear infinite alternate;
 }
