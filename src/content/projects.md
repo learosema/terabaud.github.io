@@ -6,10 +6,11 @@
 
 #### Libraries
 
-* [glutz.js](https://github.com/terabaud/hello-webgl) - GL utilities for JS, a microlibrary for WebGL
+* [GLea](https://github.com/terabaud/hello-webgl/tree/gh-pages/lib/glea/) - GL utilities for JS, a microlibrary for WebGL
 
-#### Animations
+#### Digital art
 
+* [Hello WebGL](https://terabaud.github.io/hello-webgl/) - Various WebGL experiments 
 * [Display hacked by atan2](https://codepen.io/terabaud/details/avKerm) - GLSL Shader animation
 * [Morphing fractal](https://codepen.io/terabaud/details/qVXVbW) - GLSL Shader animation
 * [This pen has bugs](https://codepen.io/terabaud/details/QNpBvE) - a canvas animation with lots of bugs
@@ -20,6 +21,7 @@
 
 * [Get to Zero](https://codepen.io/terabaud/details/NGJyxx) - Combine multiple tiles to decrease the number of a tile.
 * [Turn off the Lights](https://codepen.io/terabaud/details/QOyLbK) - turn off all the lights, but you can only toggle whole rows and whole columns
+* [Hyper Nibbly](https://terabaud.github.io/hyper-nibbly) - a turn-based snake strategy game I made while travelling with Deutsche Bahn
 
 #### Maths
 

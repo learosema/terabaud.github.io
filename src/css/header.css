@@ -6,7 +6,6 @@
   height: 100vh;
 }
 
-
 .header__wrapper {
   position: relative;
   max-width: var(--page-max-width);
@@ -17,23 +16,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .header__text {
   box-sizing: border-box;  
   margin: 1vmin;
-
 }
-
-
 
 .header__canvas {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
   background-color: var(--bg-color-3);
-
 }
 
 .social__list {
