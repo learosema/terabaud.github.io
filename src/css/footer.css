@@ -16,3 +16,8 @@
 .footer__list li {
   padding: 1em;
 }
+
+.footer__list li:first-child {
+  width: 100%;
+  text-align: center;
+}
