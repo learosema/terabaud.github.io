@@ -280,6 +280,11 @@ ul {
   text-align: center;
 }
 
+.footer__list li a {
+  color: #fff;
+  color: var(--nav-fg-color--hover);
+}
+
 .contact-form {
   padding: .5em 0;
 }
