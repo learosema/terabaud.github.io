@@ -170,6 +170,7 @@ ul {
   text-decoration: none;
 }
 
+.nav__link:active, 
 .nav__link:hover {
   color: var(--nav-fg-color--hover);
   -webkit-animation: wiggle 0.45s linear infinite alternate;
