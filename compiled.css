@@ -1,28 +1,33 @@
 :root {
-  --bg-color: #fff;
-  --text-color: #213;
-  --captions: #442266;
-  --link-color: rgb(33, 99, 233);
-  --bg-color-2: #ffa1d1;
-  --nav-bg-color: #426;
-  --shadow-color: rgba(0,0,0,.5);
-  --nav-fg-color: #fff;
-  --page-max-width: 1000px;
+  /*** General Settings ***/
   --text-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   --caption-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+  --page-max-width: 1000px;
+
+  /*** Dark theme settings ***/
+  --bg-color-2: #324;
+  --bg-color: #111;
+  --shadow-color: #000;
+  --text-color: #eee;
+  --captions: #fff;
+  --link-color: #8cf;
+  --nav-bg-color: #000;
+  --nav-fg-color: #ffbfef;
+  --nav-fg-color-hover: #fff;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
+  /*** Light theme settings ***/
   :root {
-    --bg-color-2: #324;
-    --bg-color: #111;
-    --shadow-color: #000;
-    --text-color: #eee;
-    --captions: #fff;
-    --link-color: #8cf;
-    --nav-bg-color: #000;
-    --nav-fg-color: #ffbfef;
-    --nav-fg-color-hover: #fff;
+    --bg-color: #fff;
+    --text-color: #213;
+    --captions: #442266;
+    --link-color: rgb(33, 99, 233);
+    --bg-color-2: #ffa1d1;
+    --nav-bg-color: #426;
+    --shadow-color: rgba(0,0,0,.5);
+    --nav-fg-color: #fff;
+    --page-max-width: 1000px;
   }
 }
 
@@ -83,11 +88,11 @@ html {
 body {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-family: var(--text-font);
-  font-size: 150%;
-  line-height: 1.8;
-  background: #fff;
+  font-size: 1.5em;
+  line-height: 1.6;
+  background: #111;
   background: var(--bg-color);
-  color: #213;
+  color: #eee;
   color: var(--text-color);
   margin: 0;
 }
@@ -95,7 +100,7 @@ body {
 svg.filters { display: none; }
 
 a {
-  color: rgb(33, 99, 233);
+  color: #8cf;
   color: var(--link-color);
 }
 
@@ -105,7 +110,7 @@ h1, h2, h3, h4, h5 {
   font-weight: 400;
   margin: .25em 0;
   padding: 0;
-  color: #442266;
+  color: #fff;
   color: var(--captions);
 }
 
@@ -125,11 +130,11 @@ ul {
   position: sticky;
   z-index: 10;
   position: fixed;
-  background-color: #426;
+  background-color: #000;
   background-color: var(--nav-bg-color);
   width: 100%;
   height: auto;
-  box-shadow: 0 0 25px 5px rgba(0,0,0,.5);
+  box-shadow: 0 0 25px 5px #000;
   box-shadow: 0 0 25px 5px var(--shadow-color);
 }
 
@@ -159,7 +164,7 @@ ul {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-family: var(--caption-font);
   font-weight: bold;
-  color: #fff;
+  color: #ffbfef;
   color: var(--nav-fg-color);
   text-transform: uppercase;
   text-decoration: none;
@@ -177,7 +182,7 @@ ul {
   box-sizing: border-box;
   width: 100%;
   height: 100vh;
-  box-shadow: 0 0 25px 5px rgba(0,0,0,.5);
+  box-shadow: 0 0 25px 5px #000;
   box-shadow: 0 0 25px 5px var(--shadow-color);
 }
 
@@ -203,7 +208,7 @@ ul {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background-color: #ffa1d1;
+  background-color: #324;
   background-color: var(--bg-color-2);
 }
 
@@ -279,7 +284,7 @@ ul {
 
 textarea.contact-form__input,
 input.contact-form__input {
-  border: 1px solid rgb(33, 99, 233);
+  border: 1px solid #8cf;
   border: 1px solid var(--link-color);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   display: block;
@@ -289,9 +294,9 @@ input.contact-form__input {
 }
 
 .contact-form__submit {
-  border: 1px solid rgb(33, 99, 233);
+  border: 1px solid #8cf;
   border: 1px solid var(--link-color);
-  background: rgb(33, 99, 233);
+  background: #8cf;
   background: var(--link-color);
   color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -302,7 +307,7 @@ input.contact-form__input {
 }
 
 .contact-form__submit:hover {
-  background: #ffa1d1;
+  background: #324;
   background: var(--bg-color-2);
 }
 
