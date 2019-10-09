@@ -280,7 +280,7 @@ ul {
   text-align: center;
 }
 
-.footer__list li a {
+.footer__list li.footer__list-item a {
   color: #fff;
   color: var(--nav-fg-color--hover);
 }
