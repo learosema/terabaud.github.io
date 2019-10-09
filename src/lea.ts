@@ -24,7 +24,7 @@ setSize()
 onresize = setSize
 
 const isDarkMode = testMediaQuery('(prefers-color-scheme: dark)')
-const prefersReducedMotion = testMediaQuery('(prefers-reduced-motion)')
+const prefersReducedMotion = testMediaQuery('(prefers-reduced-motion: reduce)')
 
 class Particle {
 
