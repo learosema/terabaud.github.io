@@ -175,12 +175,14 @@ ul {
 .nav__link:hover {
   color: #fff;
   color: var(--nav-fg-color--hover);
+}
+
+.nav__link:hover {
   -webkit-animation: wiggle 0.45s linear infinite alternate;
           animation: wiggle 0.45s linear infinite alternate;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .nav__link:active,
   .nav__link:hover {
     -webkit-animation: none;
             animation: none;
@@ -202,7 +204,7 @@ ul {
   max-width: 1000px;
   max-width: var(--page-max-width);
   box-sizing: border-box;
-  padding: 7em .5em 0 .5em;
+  padding: 3.5em .5em 0 .5em;
   height: 100vh;
   margin: 0 auto;
   display: flex;
@@ -221,7 +223,7 @@ ul {
 .social__list {
   list-style: none;
   padding: 0;
-  margin: 2em 0 0 0;
+  margin: 1em 0;
   width: 100%;
   display: flex;
   justify-content: space-around; 
