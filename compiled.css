@@ -13,7 +13,7 @@
   --link-color: #8cf;
   --nav-bg-color: #000;
   --nav-fg-color: #ffbfef;
-  --nav-fg-color-hover: #fff;
+  --nav-fg-color--hover: #fff;
 }
 
 @media (prefers-color-scheme: light) {
@@ -27,6 +27,7 @@
     --nav-bg-color: #426;
     --shadow-color: rgba(0,0,0,.5);
     --nav-fg-color: #fff;
+    --nav-fg-color--hover: #ffbfef;
     --page-max-width: 1000px;
   }
 }
@@ -172,6 +173,7 @@ ul {
 
 .nav__link:active, 
 .nav__link:hover {
+  color: #fff;
   color: var(--nav-fg-color--hover);
   -webkit-animation: wiggle 0.45s linear infinite alternate;
           animation: wiggle 0.45s linear infinite alternate;
