@@ -21,3 +21,7 @@
   width: 100%;
   text-align: center;
 }
+
+.footer__list li a {
+  color: var(--nav-fg-color--hover);
+}
