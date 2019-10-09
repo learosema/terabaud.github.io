@@ -177,18 +177,6 @@ ul {
   color: var(--nav-fg-color--hover);
 }
 
-.nav__link:hover {
-  -webkit-animation: wiggle 0.45s linear infinite alternate;
-          animation: wiggle 0.45s linear infinite alternate;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .nav__link:hover {
-    -webkit-animation: none;
-            animation: none;
-  }
-}
-
 .header {
   position: relative;
   overflow: hidden;
