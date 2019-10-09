@@ -8,13 +8,23 @@ const a = $`.header__canvas`
 const c = a.getContext`2d`
 let w, h
 
-function setSize () {
+function setSize (): void {
   w = a.width = a.clientWidth
   h = a.height = a.clientWidth
   particles.splice(0, N)
 }
+
+function testMediaQuery(query): boolean {
+  const hasMediaQuery ='matchMedia' in window 
+  const mediaQuery = hasMediaQuery && window.matchMedia(query)
+  return Boolean(mediaQuery && mediaQuery.matches)
+}
+
 setSize()
-onresize=setSize
+onresize = setSize
+
+const isDarkMode = testMediaQuery('(prefers-color-scheme: dark)')
+const prefersReducedMotion = testMediaQuery('(prefers-reduced-motion)')
 
 class Particle {
 
@@ -37,13 +47,15 @@ class Particle {
     c.translate(this.x, this.y)
     c.rotate(this.r * DEG)
     c.translate(-this.x, -this.y)
-    c.fillStyle = 'rgba(255,255,255,.1)'
+    c.fillStyle = isDarkMode ? 'rgba(0, 0, 0, .1)' : 'rgba(255,255,255,.1)'
     c.fillRect(this.x - this.w / 2, this.x - this.w / 2, this.w, this.h)
     c.restore()
   }
 
   move () {
-    this.r = (this.r + .1) % 360
+    if (! prefersReducedMotion) {
+      this.r = (this.r + .01) % 360
+    }
   } 
 }
 

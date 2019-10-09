@@ -15,7 +15,7 @@
 * [Morphing fractal](https://codepen.io/terabaud/details/qVXVbW) - GLSL Shader animation
 * [This pen has bugs](https://codepen.io/terabaud/details/QNpBvE) - a canvas animation with lots of bugs
 * [Color spin](https://codepen.io/terabaud/details/gGvaJZ) - LO-RES canvas animation, presented at the [CodePen Meetup Hamburg](https://meetup.com/CodePenHamburg) October 2017 on [special hardware](https://twitter.com/CodePenHamburg/status/917888354670301184), hosted by [CELLULAR](https://cellular.de)
-* [Game of Wolves, Sheeps and Grass](https://codepen.io/terabaud/details/domVRZ/) - a cellular automaton.
+* [Webcam art](https://terabaud.github.io/hello-webgl/sobel-edge-detection/)
 
 #### Games
 
@@ -26,5 +26,6 @@
 #### Maths
 
 * [Triangle Fun](https://codepen.io/terabaud/details/qZYoZK)
+* [Math Fun](https://github.com/terabaud/math-fun/)
 
 This is only a small excerpt of my works. Check out my [CodePen profile](https://codepen.io/terabaud/) for more.

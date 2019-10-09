@@ -33,7 +33,7 @@ input.contact-form__input {
 }
 
 .contact-form__submit:hover {
-  background: var(--bg-color-3);
+  background: var(--bg-color-2);
 }
 
 .contact-form__submit:active {

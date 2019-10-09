@@ -8,8 +8,8 @@ html {
 
 body {
   font-family: var(--text-font);
-  font-size: 133%;
-  line-height: 1.5;
+  font-size: 150%;
+  line-height: 1.8;
   background: var(--bg-color);
   color: var(--text-color);
   margin: 0;

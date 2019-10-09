@@ -1,21 +1,18 @@
-
 .main__section {
-  box-sizing: border-box;
-
   margin: 0 auto;
   padding: 4em 1em;
   max-width: var(--page-max-width);
 }
+
 .main__content {
   min-height: 80vh;
 }
+
 .main__content:last-child {
   min-height: 70vh;
 }
 
-@media (min-width: 800px) {
-
-
+@media (min-width: 768px) {
   .main__content > p:first-child,
   .main__content > h4:first-child {
     padding-top: 0;
