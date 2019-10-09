@@ -5,12 +5,12 @@ p
 
 form.contact-form(action="https://formspree.io/terabaud@gmail.com", method="POST")
   .contact-form__field
-    label.contact-form__label(for="name") Name
-    input.contact-form__input(name="name", required)
+    label.contact-form__label(for="fromName") Name
+    input.contact-form__input#fromName(name="name", required)
   .contact-form__field
-    label.contact-form__label(for="_replyto") E-Mail
-    input.contact-form__input(name="_replyto", required)
+    label.contact-form__label(for="replyTo") E-Mail
+    input.contact-form__input#replyTo(name="_replyto", required)
   .contact-form__field
-    label.contact-form__label(for="text") Message
-    textarea.contact-form__input(name="text", cols="80", rows="10", required)
+    label.contact-form__label(for="message") Message
+    textarea.contact-form__input#message(name="text", cols="80", rows="10", required)
   button.contact-form__submit(type="submit") Submit
