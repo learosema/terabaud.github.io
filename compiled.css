@@ -255,7 +255,10 @@ ul {
 }
 
 .footer {
-  background: #222;
+  background: #000;
+  background: var(--nav-bg-color);
+  color: #ffbfef;
+  color: var(--nav-fg-color);
   padding: 2em;
 }
 
@@ -265,7 +268,16 @@ ul {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.footer__list li {
+  padding: 1em;
+}
+
+.footer__list li:first-child {
+  width: 100%;
+  text-align: center;
 }
 
 .contact-form {

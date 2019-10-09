@@ -24,7 +24,7 @@ function testMediaQuery(query) {
 setSize();
 onresize = setSize;
 var isDarkMode = testMediaQuery('(prefers-color-scheme: dark)');
-var prefersReducedMotion = testMediaQuery('(prefers-reduced-motion)');
+var prefersReducedMotion = testMediaQuery('(prefers-reduced-motion: reduce)');
 var Particle = /** @class */ (function () {
     function Particle() {
         this.x = (random() * w) | 0;
