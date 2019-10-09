@@ -179,6 +179,14 @@ ul {
           animation: wiggle 0.45s linear infinite alternate;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .nav__link:active,
+  .nav__link:hover {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
+
 .header {
   position: relative;
   overflow: hidden;
