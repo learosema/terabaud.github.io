@@ -7,13 +7,14 @@
 
 #### Libraries
 
-* [GLea](https://github.com/terabaud/hello-webgl/tree/master/lib/glea/) - GL utilities for JS, a microlibrary for WebGL
-* [Math-fun](https://github.com/terabaud/math-fun/) - Collection of useful math functions 
+* [glea](https://github.com/terabaud/hello-webgl/tree/master/lib/glea/) - a microlibrary for WebGL
+* [math-fun](https://github.com/terabaud/math-fun/) - Collection of useful math functions 
+* [object-path](https://github.com/terabaud/object-path) - get property from object by string without eval
 
 #### Digital art
 
 * [Hello WebGL](https://terabaud.github.io/hello-webgl/) - Various WebGL experiments 
-* [Hypnotizing Cyclones](https://codepen.io/terabaud/pen/abbayqz) - GLSL Shader animation
+* [Hypnotizing Cyclones](https://codepen.io/terabaud/details/abbayqz) - GLSL Shader animation
 * [Display hacked by atan2](https://codepen.io/terabaud/details/avKerm) - GLSL Shader animation
 * [Morphing fractal](https://codepen.io/terabaud/details/qVXVbW) - GLSL Shader animation
 * [This pen has bugs](https://codepen.io/terabaud/details/QNpBvE) - a canvas animation with lots of bugs
@@ -24,7 +25,7 @@
 
 * [Get to Zero](https://codepen.io/terabaud/details/NGJyxx) - Combine multiple tiles to decrease the number of a tile.
 * [Turn off the Lights](https://codepen.io/terabaud/details/QOyLbK) - turn off all the lights, but you can only toggle whole rows and whole columns
-* [Hyper Nibbly](https://terabaud.github.io/hyper-nibbly) - a turn-based snake strategy game I made while travelling with Deutsche Bahn
+* [Hyper Nibbly](https://terabaud.github.io/hyper-nibbly) - a turn-based snake strategy game I made while travelling with Deutsche Bahn (currently only playable via keyboard)
 
 #### SVG Art
 
