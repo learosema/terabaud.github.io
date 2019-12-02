@@ -76,7 +76,7 @@ function animation(frame) {
   }
   window.setTimeout(() => {
     requestAnimationFrame(animation)
-  }, 33);
+  }, 33)
 }
 
 animation(0)
