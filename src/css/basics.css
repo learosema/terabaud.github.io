@@ -15,7 +15,12 @@ body {
   margin: 0;
 }
 
-svg.filters { display: none; }
+svg.filters {
+  width: 1px;
+  height: 1px;
+  z-index: -1;
+  position: absolute;
+}
 
 a {
   color: var(--link-color);

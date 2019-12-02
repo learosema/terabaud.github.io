@@ -23,8 +23,6 @@ function testMediaQuery(query): boolean {
 setSize()
 onresize = setSize
 
-const isDarkMode = testMediaQuery('(prefers-color-scheme: dark)')
-const prefersReducedMotion = testMediaQuery('(prefers-reduced-motion: reduce)')
 
 class Particle {
 
@@ -42,19 +40,27 @@ class Particle {
     this.h = (random() * (5 + h))|0
   }
 
+  get isDarkMode() {
+    return testMediaQuery('(prefers-color-scheme: dark)')
+  }
+
+  get prefersReducedMotion() {
+    return testMediaQuery('(prefers-reduced-motion: reduce)')
+  }
+
   render () {
     c.save()
     c.translate(this.x, this.y)
     c.rotate(this.r * DEG)
     c.translate(-this.x, -this.y)
-    c.fillStyle = isDarkMode ? 'rgba(0, 0, 0, .1)' : 'rgba(255,255,255,.1)'
+    c.fillStyle = this.isDarkMode ? 'rgba(0, 0, 0, .1)' : 'rgba(255,255,255,.1)'
     c.fillRect(this.x - this.w / 2, this.x - this.w / 2, this.w, this.h)
     c.restore()
   }
 
   move () {
-    if (! prefersReducedMotion) {
-      this.r = (this.r + .01) % 360
+    if (! this.prefersReducedMotion) {
+      this.r = (this.r + .05) % 360
     }
   } 
 }
@@ -68,7 +74,9 @@ function animation(frame) {
     particles[i].render()
     particles[i].move()
   }
-  requestAnimationFrame(animation)
+  window.setTimeout(() => {
+    requestAnimationFrame(animation)
+  }, 33);
 }
 
 animation(0)

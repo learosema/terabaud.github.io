@@ -14,6 +14,11 @@
   --nav-bg-color: #000;
   --nav-fg-color: #ffbfef;
   --nav-fg-color--hover: #fff;
+  --input-bg-color: var(--bg-color);
+  --input-border: var(--text-color);
+  --button-background: #1f2f7f;
+  --button-background--hover: #1f5fcf;
+  --button-color: #ffffff;
 }
 
 @media (prefers-color-scheme: light) {
@@ -28,6 +33,10 @@
     --shadow-color: rgba(0,0,0,.5);
     --nav-fg-color: #fff;
     --nav-fg-color--hover: #ffbfef;
-    --page-max-width: 1000px;
+    --input-bg-color: var(--bg-color);
+    --input-border: var(--text-color);
+    --button-background: #9cd8fc;
+    --button-background--hover: #4fbfff;
+    --button-color: #000000;
   }
 }

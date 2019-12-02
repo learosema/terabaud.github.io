@@ -13,7 +13,10 @@
 
 textarea.contact-form__input,
 input.contact-form__input {
-  border: 1px solid var(--link-color);
+  border: 1px solid var(--input-border);
+  color: var(--input-color);
+  background: var(--input-background);
+  font-size: 20px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   display: block;
   width: 100%;
@@ -22,9 +25,9 @@ input.contact-form__input {
 }
 
 .contact-form__submit {
-  border: 1px solid var(--link-color);
-  background: var(--link-color);
-  color: #fff;
+  border: 1px solid transparent;
+  background: var(--button-background);
+  color: var(--button-color);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   border-radius: 5px;
   margin: .5em 0;
@@ -33,7 +36,7 @@ input.contact-form__input {
 }
 
 .contact-form__submit:hover {
-  background: var(--bg-color-2);
+  background: var(--button-background--hover);
 }
 
 .contact-form__submit:active {
