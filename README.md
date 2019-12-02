@@ -2,11 +2,11 @@
 
 This is the development branch of my site. It has a nice NPM workflow ☺.
 
-To install the dependencies, type `npm install`. Then, type `npm start` to start the server at localhost:8080.
+To install the dependencies, type `npm install`. Then, type `npm start` to start the server at `localhost:1337`.
 
 ## what's inside?
 
-This is just a static site rendered via common tools available on NPM.
+This is a static site rendered via common tools available on NPM.
 
 * pug to html compilation
 * [PostCSS](https://github.com/postcss/postcss) with [Preset Env](https://preset-env.cssdb.org/).
